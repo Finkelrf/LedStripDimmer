@@ -19,7 +19,7 @@ void loop() {
   //Sum NUMBER_OF_READINGS samples with 1ms delay between readings
   for(int i=0; i<NUMBER_OF_READINGS;i++){
     //The potentiometer sample is divided by 4 because the analog sample 
-    //goes up to 1023 and the PWM output goes up to 155
+    //goes up to 1023 and the PWM output goes up to 255
     potValue = analogRead(POT_PIN)/4; 
     total += potValue;
     delay(1);
